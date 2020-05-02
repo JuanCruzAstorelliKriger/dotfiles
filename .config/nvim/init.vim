@@ -12,7 +12,14 @@ let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 set background=dark
 
+" Tabs and indentation
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+set smartindent
+
 set number
+set showcmd
 
 set hidden
 
