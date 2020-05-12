@@ -11,6 +11,7 @@ alias ..='cd ..'
 # Git related
 alias gs='git status'
 alias ga='git add'
+alias gd='git diff'
 alias gc='git commit'
 alias gl='git log --all --decorate --oneline --graph'
 

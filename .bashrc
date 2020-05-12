@@ -116,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Export to path my scripts
+export PATH="/home/$USER/bin:$PATH"
+
 # Change default terminal editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
