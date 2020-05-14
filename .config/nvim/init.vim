@@ -4,6 +4,7 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-obsession'
 call plug#end()
 
 let mapleader = " "
@@ -29,7 +30,7 @@ set showcmd
 
 set hidden
 
-" Only if some kind of line plugin is set
+" Only if some kind of statusline plugin is set
 set noshowmode
 
 " Custom mappings
