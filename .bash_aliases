@@ -9,7 +9,7 @@ alias cp='cp -i'
 alias ..='cd ..'
 
 # Git related
-alias gs='git status'
+alias gs='git status -u'
 alias ga='git add'
 alias gd='git diff'
 alias gc='git commit'
