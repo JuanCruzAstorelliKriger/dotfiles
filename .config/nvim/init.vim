@@ -39,5 +39,21 @@ set hidden
 " Only if some kind of statusline plugin is set
 set noshowmode
 
-" Custom mappings
+" --CUSTOM MAPINGS--
 map Y y$
+
+" Easier split movement. Check: https://thoughtbot.com/blog/vim-splits-move-faster-and-more-naturally
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Where the new split is located
+set splitbelow
+set splitright
+
+" Maps Alt-[h,j,k,l] to resizing a window split
+map <silent> <A-h> <C-w><
+map <silent> <A-j> <C-W>-
+map <silent> <A-k> <C-W>+
+map <silent> <A-l> <C-w>>
