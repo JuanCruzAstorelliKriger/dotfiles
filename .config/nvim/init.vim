@@ -39,6 +39,9 @@ set hidden
 " Only if some kind of statusline plugin is set
 set noshowmode
 
+" Custom dir for swap files
+set directory^=$HOME/.vim/tmp//
+
 " --CUSTOM MAPINGS--
 map Y y$
 
