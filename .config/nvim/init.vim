@@ -11,6 +11,8 @@ Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 call plug#end()
 
 let mapleader = " "
