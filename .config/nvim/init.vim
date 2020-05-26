@@ -13,6 +13,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'google/vim-searchindex'
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 let mapleader = " "
