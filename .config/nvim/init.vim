@@ -68,3 +68,10 @@ map <silent> <A-l> <C-w>>
 " Inspired in https://github.com/tpope/vim-unimpaired
 nnoremap ]q :cnext<ENTER>
 nnoremap [q :cprev<ENTER>
+
+set pastetoggle=<F4>
+
+" Clipoard yank/pasting
+noremap <Leader>y "+y
+noremap <Leader>p "+p
+noremap <Leader>P "+P
