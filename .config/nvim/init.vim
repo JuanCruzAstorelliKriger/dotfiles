@@ -46,6 +46,9 @@ set noshowmode
 " Custom dir for swap files
 set directory^=$HOME/.vim/tmp//
 
+" Autocommands
+autocmd BufRead bash-fc.* set syntax=sh
+
 " --CUSTOM MAPINGS--
 map Y y$
 
