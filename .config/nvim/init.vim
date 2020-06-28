@@ -48,6 +48,7 @@ set directory^=$HOME/.vim/tmp//
 
 " Autocommands
 autocmd BufRead bash-fc.* set syntax=sh
+autocmd BufWritePre *.[ch] %s/^\s\+$//
 
 " --CUSTOM MAPINGS--
 map Y y$
