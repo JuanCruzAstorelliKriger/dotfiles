@@ -64,3 +64,7 @@ map <silent> <A-h> <C-w><
 map <silent> <A-j> <C-W>-
 map <silent> <A-k> <C-W>+
 map <silent> <A-l> <C-w>>
+
+" Inspired in https://github.com/tpope/vim-unimpaired
+nnoremap ]q :cnext<ENTER>
+nnoremap [q :cprev<ENTER>
