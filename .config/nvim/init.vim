@@ -53,6 +53,9 @@ autocmd BufWritePre *.[ch] silent! %s/^\s\+$//
 " --CUSTOM MAPINGS--
 map Y y$
 
+nnoremap j gj
+nnoremap k gk
+
 " Easier split movement. Check: https://thoughtbot.com/blog/vim-splits-move-faster-and-more-naturally
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
