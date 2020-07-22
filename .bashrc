@@ -122,3 +122,7 @@ export PATH="/home/$USER/bin:$PATH"
 # Change default terminal editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+
+# SHOPTS
+# Check https://unix.stackexchange.com/questions/353386/when-is-a-multiline-history-entry-aka-lithist-in-bash-possible
+# shopt -s cmdhist lithist
