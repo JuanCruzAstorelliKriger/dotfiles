@@ -35,6 +35,11 @@ set softtabstop=4
 set shiftwidth=4
 set smartindent
 
+" Line wrapping
+set showbreak=>…
+set linebreak
+set textwidth=100
+
 set number
 set showcmd
 
