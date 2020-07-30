@@ -15,7 +15,10 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'google/vim-searchindex'
 Plug 'preservim/nerdcommenter'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
+source $HOME/.config/nvim/plug-config/coc.vim
 
 let mapleader = " "
 
