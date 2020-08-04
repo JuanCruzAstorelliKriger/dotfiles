@@ -19,6 +19,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 source $HOME/.config/nvim/plug-config/coc.vim
+let g:coc_global_extensions = ['coc-phpls', 'coc-html']
 
 let mapleader = " "
 
