@@ -15,7 +15,10 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'google/vim-searchindex'
 Plug 'preservim/nerdcommenter'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
+source $HOME/.config/nvim/plug-config/coc.vim
 
 let mapleader = " "
 
@@ -34,6 +37,11 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 set smartindent
+
+" Line wrapping
+set showbreak=>…
+set linebreak
+set textwidth=100
 
 set number
 set showcmd
