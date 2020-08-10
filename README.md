@@ -8,3 +8,8 @@ https://github.com/neovim/neovim/wiki/Installing-Neovim#appimage-universal-linux
 mv nvim /usr/local/bin/
 sudo chmod a+rx /usr/local/bin/nvim
 ```
+
+## CoC Config
+
+**Install Node**
+https://github.com/nodesource/distributions/blob/master/README.md#debinstall
