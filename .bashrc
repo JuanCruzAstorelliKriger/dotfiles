@@ -118,6 +118,7 @@ fi
 
 # Export to path my scripts
 export PATH="/home/$USER/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 # Change default terminal editor
 export VISUAL=nvim
