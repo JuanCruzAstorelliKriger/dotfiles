@@ -16,9 +16,13 @@ Plug 'tpope/vim-repeat'
 Plug 'google/vim-searchindex'
 Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'https://github.com/adelarsq/vim-matchit'
+Plug 'nelsyeung/twig.vim'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 source $HOME/.config/nvim/plug-config/coc.vim
+let g:coc_global_extensions = ['coc-phpls', 'coc-html']
 
 let mapleader = " "
 
