@@ -14,8 +14,10 @@ xkb_symbols "basic" {
     key <AE11>	{ [apostrophe,   question,    backslash, questiondown ]	};
     key <AE12>	{ [exclamdown, questiondown, dead_tilde,   asciitilde ]	};
 
-    key <AD11>	{ [dead_grave, dead_circumflex, bracketleft, dead_abovering ] };
-    key <AD12>	{ [      plus,   asterisk, bracketright,  dead_macron ]	};
+    //key <AD11>	{ [dead_grave, dead_circumflex, bracketleft, dead_abovering ] };
+    key <AD11>	{ [bracketleft, dead_circumflex, dead_grave, dead_abovering ] };
+    //key <AD12>	{ [      plus,   asterisk, bracketright,  dead_macron ]	};
+    key <AD12>	{ [      bracketright,   plus, asterisk,  dead_macron ]	};
 
     // key <AC10>	{ [    ntilde, Ntilde,   asciitilde, dead_doubleacute ]	};
     key <AC10>	{ [braceleft, dead_diaeresis ]	};
