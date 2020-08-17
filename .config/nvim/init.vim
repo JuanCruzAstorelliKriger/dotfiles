@@ -20,12 +20,16 @@ Plug 'https://github.com/adelarsq/vim-matchit'
 Plug 'nelsyeung/twig.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-eunuch'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
+
+let mapleader = " "
 
 source $HOME/.config/nvim/plug-config/coc.vim
 let g:coc_global_extensions = ['coc-phpls', 'coc-html']
 
-let mapleader = " "
+source $HOME/.config/nvim/plug-config/fzf.vim
 
 set nocompatible
 filetype plugin on
