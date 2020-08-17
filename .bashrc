@@ -127,3 +127,5 @@ export EDITOR="$VISUAL"
 # SHOPTS
 # Check https://unix.stackexchange.com/questions/353386/when-is-a-multiline-history-entry-aka-lithist-in-bash-possible
 # shopt -s cmdhist lithist
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
