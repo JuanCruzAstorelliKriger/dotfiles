@@ -19,6 +19,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/adelarsq/vim-matchit'
 Plug 'nelsyeung/twig.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-eunuch'
 call plug#end()
 
 source $HOME/.config/nvim/plug-config/coc.vim
@@ -61,6 +62,12 @@ set directory^=$HOME/.vim/tmp//
 " Autocommands
 autocmd BufRead bash-fc.* set syntax=sh
 autocmd BufWritePre *.[ch] silent! %s/^\s\+$//
+ 
+augroup phpFiles
+    autocmd!
+    autocmd BufWritePre *.php silent! %s/^\s\+$//
+    autocmd FileType php autocmd BufWritePost * :execute '! php-cs-fixer fix' shellescape(expand("%"))
+augroup END
 
 " --CUSTOM MAPINGS--
 map Y y$
