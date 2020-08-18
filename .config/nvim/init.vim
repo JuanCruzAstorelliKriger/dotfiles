@@ -22,6 +22,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-eunuch'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 let mapleader = " "
@@ -63,6 +64,12 @@ set noshowmode
 " Custom dir for swap files
 set directory^=$HOME/.vim/tmp//
 
+" ALE conf
+let g:ale_php_phpcs_executable='/usr/bin/phpcs'
+let g:ale_php_php_cs_fixer_executable='/usr/local/bin/php-cs-fixer'
+let g:ale_fixers = {'php': ['php_cs_fixer']}
+let g:ale_fix_on_save = 1
+
 " Autocommands
 autocmd BufRead bash-fc.* set syntax=sh
 autocmd BufWritePre *.[ch] silent! %s/^\s\+$//
@@ -70,7 +77,7 @@ autocmd BufWritePre *.[ch] silent! %s/^\s\+$//
 augroup phpFiles
     autocmd!
     autocmd BufWritePre *.php silent! %s/^\s\+$//
-    autocmd FileType php autocmd BufWritePost * :execute '! php-cs-fixer fix' shellescape(expand("%"))
+    "autocmd FileType php autocmd BufWritePost * :execute '! php-cs-fixer fix' shellescape(expand("%"))
 augroup END
 
 " --CUSTOM MAPINGS--
