@@ -7,6 +7,8 @@ alias mv='mv -i'
 alias cp='cp -i'
 
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 # Git related
 alias gs='git status -u'
