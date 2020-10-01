@@ -24,6 +24,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'wellle/targets.vim'
+Plug 'tpope/vim-ragtag'
 call plug#end()
 
 let mapleader = " "
