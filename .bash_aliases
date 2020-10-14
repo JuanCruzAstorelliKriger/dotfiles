@@ -20,6 +20,8 @@ alias gl='git log --all --decorate --oneline --graph'
 # See: https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=/home/juan/.gitdotfiles/ --work-tree=/home/juan'
 
+alias phpunit='vendor/bin/phpunit --testdox --color'
+
 mcat() {
     cat "$1" | less -FX
 }
