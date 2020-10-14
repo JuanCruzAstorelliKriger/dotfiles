@@ -21,6 +21,7 @@ alias gl='git log --all --decorate --oneline --graph'
 alias config='/usr/bin/git --git-dir=/home/juan/.gitdotfiles/ --work-tree=/home/juan'
 
 alias phpunit='vendor/bin/phpunit --testdox --color'
+alias exec='sudo docker-compose exec app'
 
 mcat() {
     cat "$1" | less -FX
