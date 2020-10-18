@@ -32,7 +32,7 @@ call plug#end()
 let mapleader = " "
 
 source $HOME/.config/nvim/plug-config/coc.vim
-let g:coc_global_extensions = ['coc-phpls', 'coc-html', 'coc-tsserver']
+let g:coc_global_extensions = ['coc-phpls', 'coc-html', 'coc-tsserver', 'coc-vetur']
 
 source $HOME/.config/nvim/plug-config/fzf.vim
 
@@ -75,18 +75,13 @@ let g:ale_fixers = {
 \   'php': ['php_cs_fixer'],
 \   'javascript': ['eslint'],
 \   'typescript': ['eslint'],
+\   'vue': ['eslint'],
 \}
 let g:ale_fix_on_save = 1
 
 " Autocommands
 autocmd BufRead bash-fc.* set syntax=sh
 autocmd BufWritePre *.[ch] silent! %s/^\s\+$//
- 
-augroup phpFiles
-    autocmd!
-    autocmd BufWritePre *.php silent! %s/^\s\+$//
-    "autocmd FileType php autocmd BufWritePost * :execute '! php-cs-fixer fix' shellescape(expand("%"))
-augroup END
 
 " --CUSTOM MAPINGS--
 map Y y$
