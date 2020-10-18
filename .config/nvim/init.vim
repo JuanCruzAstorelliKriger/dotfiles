@@ -25,12 +25,14 @@ Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-ragtag'
+Plug 'othree/yajs.vim'
+Plug 'HerringtonDarkholme/yats.vim'
 call plug#end()
 
 let mapleader = " "
 
 source $HOME/.config/nvim/plug-config/coc.vim
-let g:coc_global_extensions = ['coc-phpls', 'coc-html']
+let g:coc_global_extensions = ['coc-phpls', 'coc-html', 'coc-tsserver']
 
 source $HOME/.config/nvim/plug-config/fzf.vim
 
@@ -69,7 +71,11 @@ set directory^=$HOME/.vim/tmp//
 " ALE conf
 let g:ale_php_phpcs_executable='/usr/bin/phpcs'
 let g:ale_php_php_cs_fixer_executable='/usr/local/bin/php-cs-fixer'
-let g:ale_fixers = {'php': ['php_cs_fixer']}
+let g:ale_fixers = {
+\   'php': ['php_cs_fixer'],
+\   'javascript': ['eslint'],
+\   'typescript': ['eslint'],
+\}
 let g:ale_fix_on_save = 1
 
 " Autocommands
