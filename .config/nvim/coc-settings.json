@@ -1,7 +1,7 @@
 {
     "suggest.maxPreviewWidth": 60,
     "signature.floatMaxWidth": 1,
-    "diagnostic.maxWindowWidth": 20,
+    "diagnostic.maxWindowWidth": 90,
     "suggest.languageSourcePriority": 91,
     "coc.source.around.priority": 90,
     "coc.source.buffer.priority": 90,
