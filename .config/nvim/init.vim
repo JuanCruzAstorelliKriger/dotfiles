@@ -18,7 +18,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/adelarsq/vim-matchit'
 Plug 'nelsyeung/twig.vim'
-Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-eunuch'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -32,7 +31,9 @@ call plug#end()
 let mapleader = " "
 
 source $HOME/.config/nvim/plug-config/coc.vim
-let g:coc_global_extensions = ['coc-phpls', 'coc-html', 'coc-tsserver', 'coc-vetur']
+let g:coc_global_extensions = ['coc-phpls', 'coc-html', 'coc-tsserver', 'coc-vetur', 'coc-pairs']
+" Para coc-pairs
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 source $HOME/.config/nvim/plug-config/fzf.vim
 
