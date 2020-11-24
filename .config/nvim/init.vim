@@ -26,6 +26,7 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-ragtag'
 Plug 'othree/yajs.vim'
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'posva/vim-vue'
 Plug 'ap/vim-css-color'
 call plug#end()
 
