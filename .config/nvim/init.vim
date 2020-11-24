@@ -55,10 +55,25 @@ set softtabstop=4
 set shiftwidth=4
 set smartindent
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Line wrapping
+" Common part
 set showbreak=>…
 set linebreak
-set textwidth=100
+
+" Soft-wrapping (Only visual. Preferable since it lets you change the width
+" for the wrapping at will. Doing it with 'textwidth' doesn't work that well
+" beacuse it inserts the \n in the textfile)
+" I don't use it because 'columns' doesn't preserve the background beyond the
+" given limit.
+"
+"" (already set by default) set wrap
+"set linebreak
+"set columns=100
+
+" Hard-wrapping
+autocmd BufRead *.txt,*.wiki,*.md set textwidth=100
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set number
 set showcmd
