@@ -14,7 +14,6 @@ Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'google/vim-searchindex'
-Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/adelarsq/vim-matchit'
 Plug 'nelsyeung/twig.vim'
@@ -28,6 +27,7 @@ Plug 'othree/yajs.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'posva/vim-vue'
 Plug 'ap/vim-css-color'
+Plug 'tomtom/tcomment_vim'
 call plug#end()
 
 let mapleader = " "
