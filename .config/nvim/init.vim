@@ -28,6 +28,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'posva/vim-vue'
 Plug 'ap/vim-css-color'
 Plug 'tomtom/tcomment_vim'
+Plug 'cakebaker/scss-syntax.vim'
 call plug#end()
 
 let mapleader = " "
