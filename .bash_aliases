@@ -26,3 +26,6 @@ alias exec='sudo docker-compose exec app'
 mcat() {
     cat "$1" | less -FX
 }
+
+# Específicos del proyecto notas
+alias lista='sh lista-todas-notas.sh | nvim -'
