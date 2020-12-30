@@ -137,3 +137,5 @@ noremap <Leader>P "+P
 
 " From a guy in this post: https://www.reddit.com/r/vim/comments/gymvjg/htmlvue_recommended_plugins/
 inoremap <C-s> <esc>yiwi<lt><esc>ea></><esc>hpF>i
+
+noremap <Leader>s :call search('<script')<cr>:normal zz<cr>
