@@ -28,4 +28,4 @@ mcat() {
 }
 
 # Específicos del proyecto notas
-alias lista='sh lista-todas-notas.sh | nvim -'
+source "$HOME/notes/.notas_aliases"
