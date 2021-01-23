@@ -1,0 +1,16 @@
+xterm*VT100.Translations: #override \
+    Ctrl Shift <Key>V:	insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>C:	copy-selection(CLIPBOARD) \n\
+    Ctrl <Key> minus: smaller-vt-font() \n\
+    Ctrl <Key> plus: larger-vt-font() \n\
+    Ctrl <Key> 0: set-vt-font(d)
+
+xterm*faceName: DejaVu Sans Mono
+xterm*faceSize: 11
+xterm*renderFont: true
+
+xterm*faceSize1: 8
+xterm*faceSize2: 10
+xterm*faceSize3: 12
+xterm*faceSize4: 15
+xterm*faceSize5: 21
