@@ -73,7 +73,7 @@ set linebreak
 "set columns=100
 
 " Hard-wrapping
-autocmd BufRead *.txt,*.wiki,*.md set textwidth=100
+" autocmd BufRead *.txt,*.wiki,*.md set textwidth=100
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set number
