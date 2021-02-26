@@ -84,9 +84,34 @@ set hidden
 " Only if some kind of statusline plugin is set
 set noshowmode
 
-" Custom dir for swap files
-set directory^=$HOME/.vim/tmp//
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" BACKUP STUFF
+silent ! mkdir -p $HOME/.config/nvim/backups/swap
+set directory=$HOME/.config/nvim/backups/swap//
 
+" Guarda una copia del estado del archivo antes del último :write
+set backup
+" Archivo backup auxiliar por si hay algún problema durante el proceso de
+" escritura en el archivo original
+set writebackup
+
+" From: https://superuser.com/questions/1135293/possible-to-make-a-backup-of-original-file-in-vim
+" Ya que 'path//' no funciona con backupdir
+"
+" Acompañado de cron/anacron: find $HOME/.config/nvim/backups/backup/ -type f -ctime 1 -execdir rm '{}' \;
+function! BackupDir()
+  let l:backupdir=$HOME.'/.config/nvim/backups/backup'.expand('%:p:h')
+
+   if !isdirectory(l:backupdir)
+      call mkdir(l:backupdir, 'p', 0700)
+   endif
+
+   let &backupdir=l:backupdir
+   let &backupext=strftime('~%Y-%m-%d_%H-%M-%S~')
+endfunction
+autocmd! bufwritepre * call BackupDir()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ALE conf
 let g:ale_php_phpcs_executable='/usr/bin/phpcs'
 let g:ale_php_php_cs_fixer_executable='/usr/local/bin/php-cs-fixer'
