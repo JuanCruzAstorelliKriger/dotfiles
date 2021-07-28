@@ -113,9 +113,10 @@ endfunction
 autocmd! bufwritepre * call BackupDir()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " ALE conf
-let g:ale_php_phpcs_executable='/usr/bin/phpcs'
-let g:ale_php_php_cs_fixer_executable='/usr/local/bin/php-cs-fixer'
+let g:ale_php_phpcs_executable=$HOME.'/.config/composer/vendor/bin/phpcs'
+let g:ale_php_php_cs_fixer_executable=$HOME.'/.config/composer/vendor/bin/php-cs-fixer'
 let g:ale_fixers = {
 \   'php': ['php_cs_fixer'],
 \   'javascript': ['eslint'],
