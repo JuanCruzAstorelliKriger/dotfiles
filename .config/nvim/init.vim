@@ -55,6 +55,7 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 set smartindent
+autocmd BufRead *.yml,*.yaml set softtabstop=2 shiftwidth=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Line wrapping
