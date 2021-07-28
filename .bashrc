@@ -119,6 +119,7 @@ fi
 # Export to path my scripts
 export PATH="/home/$USER/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # Change default terminal editor
 export VISUAL=nvim
