@@ -27,3 +27,7 @@ alias exec='sudo docker-compose exec app'
 mcat() {
     cat "$1" | less -FX
 }
+
+clip() {
+    sed -n "${1}p" $2 | xclip -selection p -f | xclip -selection c
+}
