@@ -120,6 +120,7 @@ fi
 export PATH="/home/$USER/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$HOME/NessunDorma/development-scripts:$PATH"
 
 # Change default terminal editor
 export VISUAL=nvim
@@ -130,3 +131,7 @@ export EDITOR="$VISUAL"
 # shopt -s cmdhist lithist
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export BROWSER=/usr/bin/google-chrome
+export MYNS_BASE_PATH=$HOME/me/myns
+alias myns="$MYNS_BASE_PATH/scripts/myns.sh"
