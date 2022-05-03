@@ -99,7 +99,8 @@ set writebackup
 " From: https://superuser.com/questions/1135293/possible-to-make-a-backup-of-original-file-in-vim
 " Ya que 'path//' no funciona con backupdir
 "
-" Acompañado de cron/anacron: find $HOME/.config/nvim/backups/backup/ -type f -ctime 1 -execdir rm '{}' \;
+" Acompañado de cron/anacron: (OJO a $HOME)
+" touch -t $(date --date="7 days ago" +%Y%m%d0000) /tmp/aux_cleansing_backup_timestamp; find /home/juan/.config/nvim/backups/backup \( \( -empty -type d \) -o \( -type f ! -newer /tmp/aux_cleansing_backup_timestamp \) \) -delete; rm /tmp/aux_cleansing_backup_timestamp;
 function! BackupDir()
   let l:backupdir=$HOME.'/.config/nvim/backups/backup'.expand('%:p:h')
 
