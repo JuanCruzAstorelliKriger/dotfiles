@@ -29,5 +29,5 @@ mcat() {
 }
 
 clip() {
-    sed -n "${1}p" $2 | xclip -selection p -f | xclip -selection c
+    sed -n "${1}p" ${2:-/dev/stdin} | xclip -selection p -f | xclip -selection c
 }
