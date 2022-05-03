@@ -31,3 +31,13 @@ mcat() {
 clip() {
     sed -n "${1}p" ${2:-/dev/stdin} | xclip -selection p -f | xclip -selection c
 }
+
+# Only Diff:
+# outputs only the added or modified (not deleted) lines in the second file
+odiff() {
+    diff \
+        --new-line-format="%L" \
+        --old-line-format="" \
+        --unchanged-line-format="" \
+        $1 $2
+}
