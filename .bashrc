@@ -135,3 +135,13 @@ export EDITOR="$VISUAL"
 export BROWSER=/usr/bin/google-chrome
 export MYNS_BASE_PATH=$HOME/me/myns
 alias myns="$MYNS_BASE_PATH/scripts/myns.sh"
+
+export ERP_ENV=localhost
+export ERP_PATH=/home/juan/NessunDorma/erp4
+source /home/juan/NessunDorma/erp4/bash/autocomplete.sh
+
+source /home/juan/NessunDorma/.credentials.sh
+# export ERP_API_CLI_ENVIRONMENT="localhost"
+export ERP_API_CLI_ENVIRONMENT="testing"
+# export ERP_API_CLI_TOKEN=$LOCALHOST_ERP_API_TOKEN
+export ERP_API_CLI_TOKEN=$TESTING_ERP_API_TOKEN
