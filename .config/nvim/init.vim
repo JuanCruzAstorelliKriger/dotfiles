@@ -170,3 +170,6 @@ inoremap <C-s> <esc>yiwi<lt><esc>ea></><esc>hpF>i
 noremap <Leader>s :call search('<script')<cr>:normal zz<cr>
 
 nnoremap <silent> <Leader>h :noh<CR>
+
+" --SNIPPETS--
+nnoremap <Leader>,pd :read $HOME/.config/nvim/snippets/php-pretty-dump<CR>t,a
